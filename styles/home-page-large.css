@@ -6,7 +6,7 @@
 
 :root {
     --main-clr: #164e70;
-    --second-clr: #000000;
+    --second-clr: #0f0f0f;
     --accent-clr: #ffff00;
     --courses-clr: #66301d;
     --text-clr: #fff;
@@ -23,12 +23,17 @@ span {
     text-align: center;
     margin: 1rem 0;
     color: var(--text-clr);
-    font-weight: 600;
+    font-weight: 500;
+}
+
+a {
+    color: var(--main-clr);
+    text-decoration: none;
 }
 
 ul {
     list-style: none;
-}
+} 
 
 /* Header */
 header {
@@ -76,7 +81,6 @@ header img {
     transition: all .3s;
 }
 
-
 .nav_toggle.show>span:nth-child(2) {
     display: none;
 }
@@ -98,24 +102,25 @@ header img {
 }
 
 /* Navbar */
-.main_nav{
-    background-color: var(--main-clr); 
+.main_nav {
+    background-color: var(--second-clr);
     height: calc(100vh - 125px);
     position: absolute;
     top: 125px;
     right: 0;
-    
+
     gap: 1rem;
     transition: all .5s ease-in-out;
-    width: 0;  
-}
-.main_nav h2 {
-     margin-inline: auto;
-     display: none;
+    width: 0;
+    overflow: hidden;
 }
 
-.main_mav__list { 
-    display: none;
+.main_nav h2 {
+    margin-inline: auto;
+}
+
+.main_mav__list {
+    display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
@@ -127,20 +132,148 @@ header img {
     text-transform: capitalize;
     text-align: center;
     padding: .5rem;
-    border-radius: 5px; 
+    border-radius: 5px;
 
     text-decoration: none;
 }
 
-body:has(.nav_toggle.show) .main_nav, body:has(.nav_toggle.show) .main_nav h2{
-    width: 80%; 
+body:has(.nav_toggle.show) .main_nav,
+body:has(.nav_toggle.show) .main_nav h2 {
+    width: 80%;
     transition: all .5s ease-in-out;
-    display: block;
 }
-body:has(.nav_toggle.show) .main_nav ul{
+
+
+/* main */
+main {
+    display: grid;
+    padding: 1rem;
+}
+
+h1 {
+    color: var(--main-clr);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+/* Course-work */
+
+.course_work>.course_work__list {
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    padding: 1rem;
+    margin-left: 1rem;
+    list-style: disc;
+
 }
- 
-.hidden {
-    display: none;
+
+.course_work>h2,
+.place>h2,
+.courses>h2 {
+    background-color: var(--main-clr);
+    padding-block: .5rem;
+    font-size: 1.3rem;
+    margin: 0;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.place > figure {
+    padding: 1rem; 
+}
+
+.place > figure > img {
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.place > figure > figcaption {
+    text-align: center;
+    color: gray;
+    font-size: .8rem;
+    margin-top: 2px;
+}
+
+/* courses */
+
+.courses .courses__nav__list {
+    display: flex;
+    width: 100%;
+    gap: .5rem;
+}
+
+.courses__nav  {
+    padding: .5rem;
+    position: relative;
+    margin-bottom: 4px;
+}
+
+.courses__nav::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; 
+    width: 100%;
+    height: 2px;
+    left: 0; 
+    background-color: rgb(173, 173, 173);
+}
+
+.courses__nav__list > li {
+    padding: .5rem;
+    border-radius: .5rem;
+    background-color: var(--second-clr);
+    color: var(--text-clr);
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+}
+
+.courses__list{
+    display:  flex;
+    flex-wrap: wrap;
+    margin-top: .5rem;
+    gap: .5rem;
+}
+
+.courses__list > .course{
+    background-color: var(--courses-clr);
+    width: 100%;
+    padding-block: .8rem;
+    text-align: center;
+    border-radius: .3rem;
+}
+
+.courses__list > .course:nth-child(4), 
+.courses__list > .course:nth-child(6){
+    background-color: var(--text-clr);
+    border: solid 1px var(--courses-clr);
+}
+
+.courses__list > .course:nth-child(4) > a, 
+.courses__list > .course:nth-child(6) > a {
+    color: var(--second-clr);
+}
+
+.course > a {
+    color: var(--text-clr);
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+/* Footer */
+footer{
+    padding: 1rem;
+    background-color: var(--main-clr);
+    color: var(--text-clr);
+    text-align: center;
+}
+
+footer p:nth-child(2){
+    color: var(--accent-clr);
+    font-size: .8rem;
 }
