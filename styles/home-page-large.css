@@ -113,6 +113,7 @@ header img {
     transition: all .5s ease-in-out;
     width: 0;
     overflow: hidden;
+    z-index: 1;
 }
 
 .main_nav h2 {
@@ -135,6 +136,10 @@ header img {
     border-radius: 5px;
 
     text-decoration: none;
+}
+
+.main_nav__link.active{
+    color: var(--accent-clr);
 }
 
 body:has(.nav_toggle.show) .main_nav,
@@ -230,38 +235,39 @@ h1 {
     text-align: center;
 }
 
+.courses__nav__list > li > a {
+    color: var(--text-clr); 
+}
+
 .courses__list{
-    display:  flex;
-    flex-wrap: wrap;
+    display: grid;
     margin-top: .5rem;
     gap: .5rem;
 }
 
 .courses__list > .course{
-    background-color: var(--courses-clr);
+    /* background-color: var(--courses-clr); */
+    border: solid 1px var(--courses-clr);
     width: 100%;
-    padding-block: .8rem;
+    padding-block: .6rem;
     text-align: center;
     border-radius: .3rem;
 }
 
-.courses__list > .course:nth-child(4), 
-.courses__list > .course:nth-child(6){
-    background-color: var(--text-clr);
-    border: solid 1px var(--courses-clr);
-}
-
-.courses__list > .course:nth-child(4) > a, 
-.courses__list > .course:nth-child(6) > a {
-    color: var(--second-clr);
-}
-
 .course > a {
-    color: var(--text-clr);
+    color: var(--second-clr);
     font-size: 1.2rem;
     text-transform: capitalize;
     text-decoration: none;
     font-weight: 500;
+}
+
+.course.completed {
+    background-color: var(--courses-clr);
+}
+
+.course.completed > a {
+    color: var(--text-clr);
 }
 
 
@@ -271,6 +277,18 @@ footer{
     background-color: var(--main-clr);
     color: var(--text-clr);
     text-align: center;
+}
+
+footer p img{
+    width: 32px;
+}
+
+footer p:nth-child(1){
+    display: flex;
+    align-items: center; 
+    margin-inline: auto;
+    justify-content: center;
+    gap: .5rem;
 }
 
 footer p:nth-child(2){
