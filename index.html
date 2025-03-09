@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jorge Sosa">
+    <meta name="description"
+        content="This assignment demonstrates your prerequisite knowledge by applying HTML, CSS, and JavaScript to the design and development a course home page.">
+    <link rel="icon" href="images/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/home-page-small.css">
+    <link rel="stylesheet" href="styles/home-page-large.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <title>W01 Assignment - Course Home Page - Jorge Sosa</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/profile.webp" alt="CSUMB Logo">
+        <span>Jorge L. Sosa</span>
+
+        <button id="nav_toggle" aria-label="toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <nav class="main_nav">
+        <h2>Site Navigation</h2>
+        <ul class="main_mav__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="syllabus.html">Chamber</a></li>
+            <li><a href="lecture.html">Github Profile</a></li>
+            <li><a href="assignments.html">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="home">
+            <h2>Course Work</h2>
+            <ul class="course__list">
+                <li><a href="syllabus.html">Syllabus</a></li>
+                <li><a href="lecture.html">Lecture</a></li>
+                <li><a href="assignments.html">Assignments</a></li>
+            </ul>
+        </section>
+        <section class="place">
+            <h2>Santa Cruz, Bolivia</h2>
+            <figure class="place__image">
+                <img src="images/santa-cruz.jpg" alt="Santa Cruz, Bolivia">
+                <figcaption>Santa Cruz, Bolivia</figcaption>
+            </figure>
+        </section>
+        <section class="courses">
+            <h2>Web and Computer Programming Certificate</h2>
+            <nav class="courses__nav">
+                <ul class="courses__nav__list">
+                    <li><a href="syllabus.html">ALL</a></li>
+                    <li><a href="lecture.html">CSE</a></li>
+                    <li><a href="assignments.html">WDD</a></li>
+                </ul>
+            </nav>
+            <ul class="courses__list">
+                <li class="course">
+                    <a href="syllabus.html">CSE 110</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 J </p>
+    </footer>
+</body>
+
+</html>
