@@ -24,7 +24,7 @@
         <img src="images/profile.webp" alt="CSUMB Logo">
         <span>Jorge L. Sosa</span>
 
-        <button id="nav_toggle" class="nav_toggle">
+        <button id="nav_toggle" class="nav_toggle" aria-label="toggle navigation">
             <span></span>
             <span></span>
             <span></span>
@@ -52,7 +52,7 @@
         <section class="place">
             <h2>Santa Cruz, Bolivia</h2>
             <figure class="place__image">
-                <img src="images/catedral.jpg" alt="Basílica Menor de San Lorenzo">
+                <img src="images/catedral_540x360.webp" alt="Basílica Menor de San Lorenzo" width="540" loading="lazy">
                 <figcaption>Basílica Menor de San Lorenzo</figcaption>
             </figure>
         </section>
@@ -61,23 +61,30 @@
             <nav class="courses__nav">
                 <ul class="courses__nav__list" id="courses_filter">
                     <li>
-                        <button value="all" class="active">ALL</button>
+                        <button value="all" class="active" aria-label="show all courses" aria-current="page">
+                            ALL
+                        </button>
                     </li>
                     <li>
-                        <button value="cse">CSE</button>
+                        <button value="cse" aria-label="show CSE courses" aria-current="page">
+                            CSE
+                        </button>
                     </li>
                     <li>
-                        <button value="wdd">WDD</button>
+                        <button value="wdd" aria-label="show WDD courses" aria-current="page">
+                            WDD
+                        </button>
                     </li>
                 </ul>
             </nav>
             <ul class="courses__list" id="courses_list">
             </ul>
+            <p>Credits: <span id="credits"></span></p>
         </section>
     </main>
     <footer>
         <p>&copy;<span id="current_year"></span> 👨🏽‍💻 Jorge Luis Sosa 👨🏽‍💻 <img
-                src="images/Flag-Bolivia_60x40.webp" alt="Bolivia's flag"></p>
+                src="images/Flag-Bolivia_60x40.webp" alt="Bolivia's flag" width="60" loading="lazy"></p>
         <p>Last Modification: <span id="last_modification"></span></p>
     </footer>
 </body>

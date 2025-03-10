@@ -1,5 +1,6 @@
 const course_list = document.querySelector('#courses_list');
 const courses_filter = document.querySelector('#courses_filter');
+const credits = document.querySelector('#credits');
 const courses = [
     {
         subject: 'CSE',
@@ -93,6 +94,7 @@ function createCourseCard(courses) {
     })
     course_list.innerHTML = "";
     course_list.innerHTML += list;
+    credits.innerHTML = courses.reduce((acc, { credits }) => acc + credits, 0);
 }
 
 function filterCourses(opt) {
@@ -109,7 +111,6 @@ function filterCourses(opt) {
     }
 
     createCourseCard(courses);
-
 }
 
 courses_filter.addEventListener('click', (e) => {
