@@ -15,6 +15,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h2,
@@ -29,11 +32,18 @@ span {
 a {
     color: var(--main-clr);
     text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 ul {
     list-style: none;
-} 
+}
+
+main {
+    flex-grow: 1;
+}
 
 /* Header */
 header {
@@ -41,9 +51,7 @@ header {
     padding: 1rem;
     text-align: center;
     font-size: 2rem;
-
     position: relative;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,7 +146,7 @@ header img {
     text-decoration: none;
 }
 
-.main_nav__link.active{
+.main_nav__link.active {
     color: var(--accent-clr);
 }
 
@@ -185,16 +193,16 @@ h1 {
     border-top-right-radius: .5rem;
 }
 
-.place > figure {
-    padding: 1rem; 
+.place>figure {
+    padding: 1rem;
 }
 
-.place > figure > img {
+.place>figure>img {
     width: 100%;
     border-radius: .5rem;
 }
 
-.place > figure > figcaption {
+.place>figure>figcaption {
     text-align: center;
     color: gray;
     font-size: .8rem;
@@ -209,7 +217,7 @@ h1 {
     gap: .5rem;
 }
 
-.courses__nav  {
+.courses__nav {
     padding: .5rem;
     position: relative;
     margin-bottom: 4px;
@@ -218,34 +226,41 @@ h1 {
 .courses__nav::after {
     content: '';
     position: absolute;
-    bottom: -2px; 
+    bottom: -2px;
     width: 100%;
     height: 2px;
-    left: 0; 
+    left: 0;
     background-color: rgb(173, 173, 173);
 }
 
-.courses__nav__list > li {
-    padding: .5rem;
+.courses__nav__list>li {
     border-radius: .5rem;
     background-color: var(--second-clr);
-    color: var(--text-clr);
-    cursor: pointer;
     flex: 1;
     text-align: center;
 }
 
-.courses__nav__list > li > a {
-    color: var(--text-clr); 
+.courses__nav__list>li>button {
+    color: var(--text-clr);
+    width: 100%;
+    padding: .7rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
-.courses__list{
+.courses__nav__list>li>button.active {
+    color: var(--accent-clr);
+    border-radius: .5rem;
+}
+
+.courses__list {
     display: grid;
     margin-top: .5rem;
     gap: .5rem;
 }
 
-.courses__list > .course{
+.courses__list>.course {
     /* background-color: var(--courses-clr); */
     border: solid 1px var(--courses-clr);
     width: 100%;
@@ -254,7 +269,7 @@ h1 {
     border-radius: .3rem;
 }
 
-.course > a {
+.course>a {
     color: var(--second-clr);
     font-size: 1.2rem;
     text-transform: capitalize;
@@ -266,32 +281,32 @@ h1 {
     background-color: var(--courses-clr);
 }
 
-.course.completed > a {
+.course.completed>a {
     color: var(--text-clr);
 }
 
 
 /* Footer */
-footer{
+footer {
     padding: 1rem;
     background-color: var(--main-clr);
     color: var(--text-clr);
     text-align: center;
 }
 
-footer p img{
+footer p img {
     width: 32px;
 }
 
-footer p:nth-child(1){
+footer p:nth-child(1) {
     display: flex;
-    align-items: center; 
+    align-items: center;
     margin-inline: auto;
     justify-content: center;
     gap: .5rem;
 }
 
-footer p:nth-child(2){
+footer p:nth-child(2) {
     color: var(--accent-clr);
     font-size: .8rem;
 }

@@ -1,4 +1,5 @@
 const course_list = document.querySelector('#courses_list');
+const courses_filter = document.querySelector('#courses_filter');
 const courses = [
     {
         subject: 'CSE',
@@ -78,13 +79,14 @@ const courses = [
         completed: false
     }
 ]
+filterCourses('all');
 
-function createCourseCard({ subject, completed, number }) {
+function createCourseCard(courses) {
     let list = "";
     courses.forEach(({ subject, completed, number }) => {
         const template = `
         <li class="course ${completed ? 'completed' : ''}">
-            <a href="syllabus.html">${subject} ${number}</a>
+            <a href="">${subject} ${number}</a>
         </li>`;
 
         list += template;
@@ -93,4 +95,28 @@ function createCourseCard({ subject, completed, number }) {
     course_list.innerHTML += list;
 }
 
-courses.forEach(createCourseCard);
+function filterCourses(opt) {
+    if (opt.toUpperCase() === 'CSE') {
+        const filtered = courses.filter(({ subject }) => subject === 'CSE');
+        createCourseCard(filtered);
+        return;
+    }
+
+    if (opt.toUpperCase() === 'WDD') {
+        const filtered = courses.filter(({ subject }) => subject === 'WDD');
+        createCourseCard(filtered);
+        return;
+    }
+
+    createCourseCard(courses);
+
+}
+
+courses_filter.addEventListener('click', (e) => {
+    const { target } = e;
+    if (target.tagName !== 'BUTTON') return;
+    const active = document.querySelector('button.active');
+    if (active) active.classList.remove('active');
+    target.classList.add('active');
+    filterCourses(target.value);
+});

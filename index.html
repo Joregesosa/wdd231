@@ -21,7 +21,7 @@
         <img src="images/profile.webp" alt="CSUMB Logo">
         <span>Jorge L. Sosa</span>
 
-        <button id="nav_toggle"  class="nav_toggle">
+        <button id="nav_toggle" class="nav_toggle">
             <span></span>
             <span></span>
             <span></span>
@@ -56,18 +56,25 @@
         <section class="courses">
             <h2>Web and Computer Programming Certificate</h2>
             <nav class="courses__nav">
-                <ul class="courses__nav__list">
-                    <li><a href="syllabus.html">ALL</a></li>
-                    <li><a href="lecture.html">CSE</a></li>
-                    <li><a href="assignments.html">WDD</a></li>
+                <ul class="courses__nav__list" id="courses_filter">
+                    <li>
+                        <button value="all" class="active">ALL</button>
+                    </li>
+                    <li>
+                        <button value="cse">CSE</button>
+                    </li>
+                    <li>
+                        <button value="wdd">WDD</button>
+                    </li>
                 </ul>
             </nav>
-            <ul class="courses__list" id="courses_list"> 
+            <ul class="courses__list" id="courses_list">
             </ul>
         </section>
     </main>
     <footer>
-        <p>&copy;<span id="current_year"></span> 👨🏽‍💻 Jorge Luis Sosa 👨🏽‍💻 <img src="images/Flag-Bolivia_60x40.webp" alt="Bolivia's flag"></p>
+        <p>&copy;<span id="current_year"></span> 👨🏽‍💻 Jorge Luis Sosa 👨🏽‍💻 <img
+                src="images/Flag-Bolivia_60x40.webp" alt="Bolivia's flag"></p>
         <p>Last Modification: <span id="last_modification"></span></p>
     </footer>
 </body>
