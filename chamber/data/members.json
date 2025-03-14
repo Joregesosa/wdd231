@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Tech Innovators Inc.",
+        "address": "1234 Silicon Valley, CA 94043",
+        "phone": "123-456-7890",
+        "website": "https://www.techinnovators.com",
+        "image": "tech_innovators.png",
+        "membership_level": 3,
+        "description": "Leading the way in tech innovation."
+    },
+    {
+        "name": "Green Energy Solutions",
+        "address": "5678 Renewable St, Austin, TX 73301",
+        "phone": "987-654-3210",
+        "website": "https://www.greenenergy.com",
+        "image": "green_energy.png",
+        "membership_level": 2,
+        "description": "Providing sustainable energy solutions."
+    },
+    {
+        "name": "Health First Clinic",
+        "address": "9101 Wellness Blvd, Miami, FL 33101",
+        "phone": "555-123-4567",
+        "website": "https://www.healthfirst.com",
+        "image": "health_first.png",
+        "membership_level": 1,
+        "description": "Your health, our priority."
+    },
+    {
+        "name": "EduTech Academy",
+        "address": "1122 Learning Ln, Boston, MA 02115",
+        "phone": "444-987-6543",
+        "website": "https://www.edutechacademy.com",
+        "image": "edutech_academy.png",
+        "membership_level": 3,
+        "description": "Innovative education technology."
+    },
+    {
+        "name": "Urban Architects",
+        "address": "3344 Design Dr, New York, NY 10001",
+        "phone": "333-222-1111",
+        "website": "https://www.urbanarchitects.com",
+        "image": "urban_architects.png",
+        "membership_level": 2,
+        "description": "Designing the future of urban spaces."
+    },
+    {
+        "name": "FinTech Solutions",
+        "address": "5566 Finance Ave, Chicago, IL 60601",
+        "phone": "222-333-4444",
+        "website": "https://www.fintechsolutions.com",
+        "image": "fintech_solutions.png",
+        "membership_level": 1,
+        "description": "Innovative financial technology services."
+    },
+    {
+        "name": "Creative Media Group",
+        "address": "7788 Media Blvd, Los Angeles, CA 90001",
+        "phone": "111-222-3333",
+        "website": "https://www.creativemedia.com",
+        "image": "creative_media.png",
+        "membership_level": 3,
+        "description": "Leading the way in creative media."
+    }
+]

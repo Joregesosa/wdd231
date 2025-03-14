@@ -1,0 +1,25 @@
+@media (min-width:768px) {
+
+    .header__menu_button,
+    .header__nav>.header__branding {
+        display: none;
+    }
+
+    .header__nav {
+        position: static;
+        transform: translateX(0);
+        opacity: 1;
+        height: fit-content;
+        background-color: transparent;
+        margin-left: auto;
+        width: fit-content;
+        padding: 0; 
+    }
+    .nav__list{
+        flex-direction: row;
+    }
+
+    .list__item > a {
+        font-size: 1.2rem;
+    }
+}
