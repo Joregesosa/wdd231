@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #1A1A2E; /* Darker shade for better contrast */
-    --secondary-color: #4FC3F7; /* Adjusted for better contrast */
-    --background-color: #FFFFFF; /* Lighter background for accessibility */
+    --primary-color: #1A1A2E; 
+    --secondary-color: #4FC3F7; 
+    --background-color: #FFFFFF; 
     --text-color: #000;
     --font-family: "Roboto", sans-serif;
 }
