@@ -19,8 +19,12 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/navbar-mobile.css">
     <link rel="stylesheet" href="styles/navbar-desktop.css">
+    <link rel="stylesheet" href="styles/chamber-mobile.css">
+    <link rel="stylesheet" href="styles/chamber-tablet.css">
+    <link rel="stylesheet" href="styles/chamber-desktop.css">
     <!-- scripts -->
     <script src="scripts/navbar.js" defer></script>
+    <script src="scripts/chamber.js" defer></script>
     <title>Timbuktu Chamber of Commerce</title>
 </head>
 
@@ -34,13 +38,6 @@
             <p class="sub">Chamber of Commerce</p>
         </div>
         <nav class="header__nav">
-            <div class="header__branding">
-                <figure class="logo">
-                    <img src="images/logo.svg" alt="Timbuktu Chamber of Commerce" width="60">
-                </figure>
-                <h1>Timbuktu</h1>
-                <p class="sub">Chamber of Commerce</p>
-            </div> 
             <ul class="nav__list">
                 <li class="list__item"><a href="index.html">Home</a></li>
                 <li class="list__item"><a href="directory.html">Directory</a></li>
@@ -52,43 +49,144 @@
             &#9776;
         </button>
     </header>
-
     <main>
         <section class="hero">
             <h2></h2>
-            <img src="./images/banner-12.jpg" alt="" style="width: 100%; object-fit: cover;">
-            <p>Keynote Tickets</p>
+            <picture>
+                <source media="(min-width: 992px)" srcset="images/hero-1200x480.webp" type="image/webp">
+                <source media="(min-width: 768px)" srcset="images/hero-992x397.webp" type="image/webp">
+                <source media="(min-width: 640px)" srcset="images/hero-768x512.webp" type="image/webp"> 
+                <source media="(min-width: 480px)" srcset="images/hero-640x427.webp" type="image/webp">
+                <img src="images/hero-480x320.webp" alt="Timbuktu Chamber of Commerce" width="100%">
+            </picture>
+            <a href="#">Keynote Tickets</a>
         </section>
         <h2>Home</h2>
 
         <section class="events">
-            <h2>events</h2>
+            <h2>Events</h2>
         </section>
 
-        <section class="Current_weather">
+        <section class="current_weather">
             <h2>Current Weather</h2>
+            <figure>
+                <img src="./images/weather.png" alt="weather icon" width="120">
+            </figure>
+            <ul>
+                <li><b>75</b>&deg;F</li>
+                <li>Party Cloudy</li>
+                <li>High: 85&deg;</li>
+                <li>Low: 52&deg;</li>
+                <li>Hymidity: 34%</li>
+                <li>Sunrise: 7:30am</li>
+                <li>Sunset: 6:30pm</li>
+            </ul>
+        </section>
+
+        <section class="weather_forecast">
+            <h2>Weather Forecast</h2>
+            <ul>
+                <li>Today: <span>90&deg;</span></li>
+                <li>Wednesday: <span>89&deg;</span></li>
+                <li>Thursday: <span>68&deg;</span></li>
+            </ul>
         </section>
 
         <section class="business_directory">
-            <div class="directory__card">
-                <h2>Business Directory</h2>
-                <p>Find local businesses in Timbuktu</p>
+            <h2>Business Directory</h2>
+            <div class="business_card">
+                <h3>Business Name</h3>
+                <p>Business Tag Line</p>
+                <hr>
                 <div class="card__content">
-                    <img src="" alt="">
+                    <img src="images/logo.svg" alt="">
                     <ul class="content__list">
-                        <li>Business Name</li>
-                        <li>Address</li>
-                        <li>Url</li>
+                        <li><a href=""><strong>Email:</strong> info@mail.com</a></li>
+                        <li><a href=""><strong>Phone:</strong> 800-55-1234</a></li>
+                        <li><a href="#"><strong>Website:</strong> www.website.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="business_card">
+                <h3>Business Name</h3>
+                <p>Business Tag Line</p>
+                <hr>
+                <div class="card__content">
+                    <img src="images/logo.svg" alt="">
+                    <ul class="content__list">
+                        <li><a href=""><strong>Email:</strong> info@mail.com</a></li>
+                        <li><a href=""><strong>Phone:</strong> 800-55-1234</a></li>
+                        <li><a href="#"><strong>Website:</strong> www.website.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="business_card">
+                <h3>Business Name</h3>
+                <p>Business Tag Line</p>
+                <hr>
+                <div class="card__content">
+                    <img src="images/logo.svg" alt="">
+                    <ul class="content__list">
+                        <li><a href=""><strong>Email:</strong> info@mail.com</a></li>
+                        <li><a href=""><strong>Phone:</strong> 800-55-1234</a></li>
+                        <li><a href="#"><strong>Website:</strong> www.website.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="business_card">
+                <h3>Business Name</h3>
+                <p>Business Tag Line</p>
+                <hr>
+                <div class="card__content">
+                    <img src="images/logo.svg" alt="">
+                    <ul class="content__list">
+                        <li><a href=""><strong>Email:</strong> info@mail.com</a></li>
+                        <li><a href=""><strong>Phone:</strong> 800-55-1234</a></li>
+                        <li><a href="#"><strong>Website:</strong> www.website.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="business_card">
+                <h3>Business Name</h3>
+                <p>Business Tag Line</p>
+                <hr>
+                <div class="card__content">
+                    <img src="images/logo.svg" alt="">
+                    <ul class="content__list">
+                        <li><a href=""><strong>Email:</strong> info@mail.com</a></li>
+                        <li><a href=""><strong>Phone:</strong> 800-55-1234</a></li>
+                        <li><a href="#"><strong>Website:</strong> www.website.com</a></li>
                     </ul>
                 </div>
             </div>
         </section>
 
     </main>
+
     <footer>
-
+        <address>
+            <strong>Timbuktu Chamber of Commerce</strong><br>
+            10 Rue De La Paix<br>
+            Timbuktu, Mali 999<br>
+            info@timbuktucc.org<br>
+            (223) 555-2300
+        </address>
+        <!-- social media -->
+        <ul class="social_media">
+            <li><a href="#"><img src="images/youtube.png" alt="Youtube" width="48"></a></li>
+            <li><a href="#"><img src="images/twitter.png" alt="Twitter" width="48"></a></li>
+            <li><a href="#"><img src="images/linkedin.png" alt="LinkedIn" width="48"></a></li>
+        </ul>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Jorge Sosa</p>
+            <p>&copy;<span id="current_year"></span> Timbuktu Chamber of Commerce</p>
+            <p>Last Modification: <span id="last_modification"></span></p>
+        </div>
     </footer>
-
 </body>
 
 </html>

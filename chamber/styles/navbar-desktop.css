@@ -1,4 +1,8 @@
 @media (min-width:768px) {
+    section.hero picture {
+        width: 100%;
+        aspect-ratio: 5/2;
+    }
 
     .header__menu_button,
     .header__nav>.header__branding {
@@ -13,13 +17,14 @@
         background-color: transparent;
         margin-left: auto;
         width: fit-content;
-        padding: 0; 
+        padding: 0;
     }
-    .nav__list{
+
+    .nav__list {
         flex-direction: row;
     }
 
-    .list__item > a {
+    .list__item>a {
         font-size: 1.2rem;
     }
 }

@@ -1,0 +1,47 @@
+@media (min-width: 640px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main > h2{
+        width: 100%;
+    }
+    .events, .business_directory {
+        width: 100%;
+        margin-inline: 2%;
+        padding-inline: 0;
+    }
+    .current_weather, .weather_forecast {
+        margin: 0;
+        width: 46%;
+        flex-shrink: 1;
+        margin-inline: 2%;
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        width: 100%;
+    }
+
+    footer > address{
+        width: 45%; 
+        order: 2;
+
+    }
+
+    footer > div{
+        width: 45%; 
+        order: 3;
+        align-self: flex-end;
+    }
+
+    footer > .social_media{
+        width: 100%;
+        order: 1;
+        padding-top: .5rem;
+    }
+    
+   
+}
