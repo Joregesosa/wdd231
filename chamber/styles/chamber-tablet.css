@@ -17,7 +17,9 @@
         flex-shrink: 1;
         margin-inline: 2%;
     }
-
+    .business_directory.list ul>li:nth-child(1) {
+        display: block;
+    }
     footer{
         display: flex;
         flex-wrap: wrap;
