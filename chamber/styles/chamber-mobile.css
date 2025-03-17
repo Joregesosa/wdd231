@@ -16,6 +16,24 @@
     object-fit: cover;
 }
 
+.hero > .hero__text{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    text-align: center;
+    color: var(--background-color);
+    background-color: rgba(0, 0, 0, .7);
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 90%; 
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.hero > .hero__text > h1 {
+   color: var(--secondary-color);
+}
+
 .hero>a {
     position: absolute;
     bottom: 1.5rem;
