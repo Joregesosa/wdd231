@@ -1,65 +1,80 @@
 [
     {
-        "name": "Tech Innovators Inc.",
-        "address": "1234 Silicon Valley, CA 94043",
-        "phone": "123-456-7890",
-        "website": "https://www.techinnovators.com",
-        "image": "tech_innovators.png",
-        "membership_level": 3,
-        "description": "Leading the way in tech innovation."
+      "name": "Hoppscotch",
+      "tag": "hoppscotch",
+      "address": "123 API Street, San Francisco, CA 94110, USA",
+      "phone": "+1 415 555 1234",
+      "website": "https://hoppscotch.com/",
+      "image": "images/hoppscotch.svg",
+      "email": "contact@hoppscotch.com",
+      "level": "2",
+      "description": "Hoppscotch is an open-source API testing tool that allows developers to test and document their APIs quickly and easily."
     },
     {
-        "name": "Green Energy Solutions",
-        "address": "5678 Renewable St, Austin, TX 73301",
-        "phone": "987-654-3210",
-        "website": "https://www.greenenergy.com",
-        "image": "green_energy.png",
-        "membership_level": 2,
-        "description": "Providing sustainable energy solutions."
+      "name": "Sketch",
+      "tag": "sketch",
+      "address": "456 Design Lane, Cupertino, CA 95014, USA",
+      "phone": "+1 408 555 5678",
+      "website": "https://www.sketch.com/",
+      "image": "images/sketch_light.svg",
+      "email": "support@sketch.com",
+      "level": "2",
+      "description": "Sketch is a digital design platform used for creating user interfaces, prototypes, and other visual design products for web and app development."
     },
     {
-        "name": "Health First Clinic",
-        "address": "9101 Wellness Blvd, Miami, FL 33101",
-        "phone": "555-123-4567",
-        "website": "https://www.healthfirst.com",
-        "image": "health_first.png",
-        "membership_level": 1,
-        "description": "Your health, our priority."
+      "name": "Clerk",
+      "tag": "clerk",
+      "address": "789 Security Blvd, New York, NY 10001, USA",
+      "phone": "+1 212 555 7890",
+      "website": "https://clerk.com/",
+      "image": "images/clerk-light.svg",
+      "email": "hello@clerk.com",
+      "level": "1",
+      "description": "Clerk is a user authentication platform designed to simplify identity management and login integrations for web and mobile apps."
     },
     {
-        "name": "EduTech Academy",
-        "address": "1122 Learning Ln, Boston, MA 02115",
-        "phone": "444-987-6543",
-        "website": "https://www.edutechacademy.com",
-        "image": "edutech_academy.png",
-        "membership_level": 3,
-        "description": "Innovative education technology."
+      "name": "Pola",
+      "tag": "pola",
+      "address": "321 AI Avenue, Berlin, Germany",
+      "phone": "+49 30 555 1234",
+      "website": "https://pola.rs/",
+      "image": "images/polars-logo.svg",
+      "email": "info@pola.rs",
+      "level": "3",
+      "description": "Pola is a web tool that generates images from text using artificial intelligence, enabling users to create visual artwork from simple descriptions."
     },
     {
-        "name": "Urban Architects",
-        "address": "3344 Design Dr, New York, NY 10001",
-        "phone": "333-222-1111",
-        "website": "https://www.urbanarchitects.com",
-        "image": "urban_architects.png",
-        "membership_level": 2,
-        "description": "Designing the future of urban spaces."
+      "name": "IBM",
+      "tag": "ibm",
+      "address": "New York, USA",
+      "phone": "+1 800-426-4968",
+      "website": "https://www.ibm.com/us-en",
+      "image": "images/ibm.svg",
+      "email": "contact@ibm.com",
+      "level": "2",
+      "description": "IBM is a multinational technology company that offers a wide range of products and services, including cloud computing, artificial intelligence, and software and hardware solutions."
     },
     {
-        "name": "FinTech Solutions",
-        "address": "5566 Finance Ave, Chicago, IL 60601",
-        "phone": "222-333-4444",
-        "website": "https://www.fintechsolutions.com",
-        "image": "fintech_solutions.png",
-        "membership_level": 1,
-        "description": "Innovative financial technology services."
+      "name": "Monkeytype",
+      "tag": "monkeytype",
+      "address": "555 Typing Road, Austin, TX 73301, USA",
+      "phone": "+1 512 555 8765",
+      "website": "https://monkeytype.com/",
+      "image": "images/monkeytype.svg",
+      "email": "support@monkeytype.com",
+      "level": "1",
+      "description": "Monkeytype is an online platform designed to improve typing skills through customizable typing speed tests and challenges."
     },
     {
-        "name": "Creative Media Group",
-        "address": "7788 Media Blvd, Los Angeles, CA 90001",
-        "phone": "111-222-3333",
-        "website": "https://www.creativemedia.com",
-        "image": "creative_media.png",
-        "membership_level": 3,
-        "description": "Leading the way in creative media."
+      "name": "Remotion",
+      "tag": "remotion",
+      "address": "101 Code Drive, San Francisco, CA 94016, USA",
+      "phone": "+1 415 555 4321",
+      "website": "https://www.remotion.dev/",
+      "image": "images/remotion.svg",
+      "email": "hello@remotion.dev",
+      "level": "3",
+      "description": "Remotion is a development tool that enables users to create programmatic videos using React, allowing for easy video generation through code."
     }
-]
+  ]
+  
