@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Welcome to the Timbuktu Chamber of Commerce website, your go-to resource for business information in Timbuktu. Discover local events, networking opportunities, business directories, and initiatives to support local shopping. Our mission is to promote economic growth, support local businesses, and foster a strong community spirit.">
-    <meta name="keywords" content="Chamber of Commerce, directory">
+    <meta name="keywords" content="Chamber of Commerce, Home">
     <meta name="author" content="Jorge Sosa">
     <!-- Facebook Tags -->
     <meta property="og:title" content="Timbuktu Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://joregesosa.github.io/wdd231/chamber/images/preview.webp">
-    <meta property="og:url" content="https://joregesosa.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://joregesosa.github.io/wdd231/chamber">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.ico">
     <!-- styles -->
@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="styles/chamber-desktop.css">
     <!-- scripts -->
     <script src="scripts/navbar.js" defer></script>
-    <script src="scripts/chamber-directory.js" type="module" defer></script>
+    <script src="scripts/chamber-home.js" defer type="module"></script>
     <title>Timbuktu Chamber of Commerce</title>
 </head>
 
@@ -38,11 +38,11 @@
             <p class="sub">Chamber of Commerce</p>
         </div>
         <nav class="header__nav">
-            <ul class="nav__list">
-                <li class="list__item"><a href="index.html">Home</a></li>
+            <ul class="nav__list" aria-label="Primary Navigation">
+                <li class="list__item"><a href="index.html" aria-current="page">Home</a></li>
                 <li class="list__item"><a href="chamber/directory.html">Directory</a></li>
                 <li class="list__item"><a href="events.html">Join</a></li>
-                <li class="list__item"><a href="news.html">Dicover</a></li>
+                <li class="list__item"><a href="news.html">Discover</a></li>
             </ul>
         </nav>
         <button class="header__menu_button" aria-label="Menu" id="menu_button">
@@ -54,6 +54,7 @@
             <div class="hero__text">
                 <h1>Timbuktu Chamber of Commerce</h1>
                 <p>Supporting Local Business</p>
+                <a href="join.html" >Join Us</a>
             </div>
             <picture>
                 <source media="(min-width: 992px)" srcset="images/hero-1200x480.webp" type="image/webp">
@@ -62,7 +63,7 @@
                 <source media="(min-width: 480px)" srcset="images/hero-640x427.webp" type="image/webp">
                 <img src="images/hero-480x320.webp" alt="Timbuktu Chamber of Commerce">
             </picture>
-            <a href="#">Keynote Tickets</a>
+            <!-- <a href="#">Keynote Tickets</a> -->
         </section>
         <h2>Home</h2>
 
@@ -70,7 +71,7 @@
             <h2>Events</h2>
         </section>
 
-        <section class="current_weather">
+        <section class="current_weather" id="current_weather">
             <h2>Current Weather</h2>
             <figure>
                 <img src="./images/weather.png" alt="weather icon" width="120">
@@ -86,9 +87,9 @@
             </ul>
         </section>
 
-        <section class="weather_forecast">
+        <section class="weather_forecast" >
             <h2>Weather Forecast</h2>
-            <ul>
+            <ul id="weather_forecast">
                 <li>Today: <span>90&deg;</span></li>
                 <li>Wednesday: <span>89&deg;</span></li>
                 <li>Thursday: <span>68&deg;</span></li>
@@ -96,7 +97,7 @@
         </section>
 
         <section class="business_directory grid" id="business_directory">
-            <h2>Business Directory</h2> 
+            <h2>Featured Businesses</h2> 
             <button>
                 <img src="images/grid.svg" alt="list icon" width="24">
             </button> 
