@@ -3,47 +3,59 @@
         display: flex;
         flex-wrap: wrap;
     }
-    main > h2{
+
+    main>h2 {
         width: 100%;
     }
-    .events, .business_directory {
+
+    .events>ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .events,
+    .business_directory {
         width: 100%;
         margin-inline: 2%;
         padding-inline: 0;
     }
-    .current_weather, .weather_forecast {
+
+    .current_weather,
+    .weather_forecast {
         margin: 0;
         width: 46%;
         flex-shrink: 1;
         margin-inline: 2%;
     }
+
     .business_directory.list ul>li:nth-child(1) {
         display: block;
     }
-    footer{
+
+    footer {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between; 
+        justify-content: space-between;
         width: 100%;
     }
 
-    footer > address{
-        width: 45%; 
+    footer>address {
+        width: 45%;
         order: 2;
 
     }
 
-    footer > div{
-        width: 45%; 
+    footer>div {
+        width: 45%;
         order: 3;
         align-self: flex-end;
     }
 
-    footer > .social_media{
+    footer>.social_media {
         width: 100%;
         order: 1;
         padding-top: .5rem;
     }
-    
-   
+
+
 }

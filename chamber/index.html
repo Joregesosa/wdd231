@@ -39,8 +39,8 @@
         </div>
         <nav class="header__nav">
             <ul class="nav__list" aria-label="Primary Navigation">
-                <li class="list__item"><a href="index.html" aria-current="page">Home</a></li>
-                <li class="list__item"><a href="chamber/directory.html">Directory</a></li>
+                <li class="list__item"><a href="/chamber" aria-current="page">Home</a></li>
+                <li class="list__item"><a href="directory.html">Directory</a></li>
                 <li class="list__item"><a href="events.html">Join</a></li>
                 <li class="list__item"><a href="news.html">Discover</a></li>
             </ul>
@@ -50,16 +50,17 @@
         </button>
     </header>
     <main>
+
         <section class="hero">
             <div class="hero__text">
                 <h1>Timbuktu Chamber of Commerce</h1>
                 <p>Supporting Local Business</p>
-                <a href="join.html" >Join Us</a>
+                <a href="join.html">Join Us</a>
             </div>
             <picture>
                 <source media="(min-width: 992px)" srcset="images/hero-1200x480.webp" type="image/webp">
                 <source media="(min-width: 768px)" srcset="images/hero-992x397.webp" type="image/webp">
-                <source media="(min-width: 640px)" srcset="images/hero-768x512.webp" type="image/webp"> 
+                <source media="(min-width: 640px)" srcset="images/hero-768x512.webp" type="image/webp">
                 <source media="(min-width: 480px)" srcset="images/hero-640x427.webp" type="image/webp">
                 <img src="images/hero-480x320.webp" alt="Timbuktu Chamber of Commerce">
             </picture>
@@ -69,6 +70,19 @@
 
         <section class="events">
             <h2>Events</h2>
+            <ul id="events">
+                <li>
+                    <h3>Business Networking</h3>
+                    <p><strong>Date:</strong> 1st Wednesday of the month</p>
+                    <p><strong>Time:</strong> 6:00pm</p>
+                    <a href="join.html" class="event__join_button">Join Now</a>
+                </li>
+                <li>
+                    <h3>Business Expo</h3> 
+                    <p><strong>Date:</strong> 2nd Saturday in May</p>
+                    <p><strong>Time:</strong> 10:00am - 4:00pm</p>
+                    <a href="join.html" class="event__join_button">Join Now</a>
+                </li>
         </section>
 
         <section class="current_weather" id="current_weather">
@@ -87,7 +101,7 @@
             </ul>
         </section>
 
-        <section class="weather_forecast" >
+        <section class="weather_forecast">
             <h2>Weather Forecast</h2>
             <ul id="weather_forecast">
                 <li>Today: <span>90&deg;</span></li>
@@ -97,10 +111,7 @@
         </section>
 
         <section class="business_directory grid" id="business_directory">
-            <h2>Featured Businesses</h2> 
-            <button>
-                <img src="images/grid.svg" alt="list icon" width="24">
-            </button> 
+            <h2>Featured Businesses</h2>
         </section>
 
     </main>

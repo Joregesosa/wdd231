@@ -16,7 +16,7 @@
     object-fit: cover;
 }
 
-.hero > .hero__text{
+.hero>.hero__text {
     position: absolute;
     top: 30%;
     left: 50%;
@@ -26,12 +26,13 @@
     background-color: rgba(0, 0, 0, .7);
     padding: 1rem;
     border-radius: .5rem;
-    width: 90%; 
+    width: 90%;
     font-size: clamp(1rem, 2vw, 1.5rem);
+    padding-bottom: 2rem;
 }
 
-.hero > .hero__text > h1 {
-   color: var(--secondary-color);
+.hero>.hero__text>h1 {
+    color: var(--secondary-color);
 }
 
 .hero a {
@@ -45,12 +46,12 @@
     font-weight: bold;
 }
 
-.hero > .hero__text > a {
-     position: static;
-     display: block;
-     width: fit-content;
-     margin: 1rem auto;
-     padding-inline: 3rem;
+.hero>.hero__text>a {
+    position: static;
+    display: block;
+    width: fit-content;
+    margin: 1rem auto;
+    padding-inline: 3rem;
 }
 
 main h2 {
@@ -63,6 +64,34 @@ main>h2 {
     margin-left: 1rem;
 }
 
+.events>ul {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1rem;
+}
+
+.events>ul li { 
+    border-radius: .5rem; 
+    flex: 1 0 160px;
+    padding: 1rem;
+}
+
+.events > ul> li> p{ 
+    padding-block: .2rem;
+    font-size: .8rem;
+}
+
+.events>ul a {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: .5rem;
+    display: block;
+    border-radius: .5rem;
+    text-align: center;
+    margin-block: 1rem;
+}
+
 .current_weather {
     display: grid;
     grid-template-areas:
@@ -70,6 +99,7 @@ main>h2 {
         "weather-icon weather-info weather-info";
     grid-auto-rows: max-content;
     row-gap: 1rem;
+    padding-bottom: 1rem;
 }
 
 .current_weather>h2 {
@@ -78,7 +108,15 @@ main>h2 {
 
 .current_weather>figure {
     grid-area: weather-icon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.current_weather>figure>img {
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, .5));
+}
+
 
 .current_weather>ul,
 .weather_forecast>ul {
@@ -87,10 +125,10 @@ main>h2 {
     flex-direction: column;
     gap: .5rem;
     grid-area: weather-info;
+    padding: 1rem;
 }
 
 .weather_forecast>ul {
-    padding: 1rem;
     gap: 1.2rem;
     font-size: 1.3rem;
 }
