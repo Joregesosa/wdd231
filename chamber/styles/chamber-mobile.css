@@ -34,7 +34,7 @@
    color: var(--secondary-color);
 }
 
-.hero>a {
+.hero a {
     position: absolute;
     bottom: 1.5rem;
     right: 1.5rem;
@@ -43,6 +43,14 @@
     border-radius: .5rem;
     color: var(--text-color);
     font-weight: bold;
+}
+
+.hero > .hero__text > a {
+     position: static;
+     display: block;
+     width: fit-content;
+     margin: 1rem auto;
+     padding-inline: 3rem;
 }
 
 main h2 {
@@ -129,14 +137,16 @@ main>h2 {
 
 /* business Grid */
 .business_directory.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); */
     gap: 1rem;
     padding: 1rem;
 }
 
 .business_directory.grid>h2 {
-    grid-column: 1/-1;
+    /* grid-column: 1/-1; */
+    width: 100%;
     color: var(--primary-color);
     font-weight: 600;
     text-align: center;
@@ -147,6 +157,7 @@ main>h2 {
     background-color: var(--accent-color);
     border-radius: .5rem;
     text-align: center;
+    flex: 1 0 320px;
 }
 
 .business_directory.grid>.business_card>h3 {
