@@ -27,7 +27,13 @@ export async function getBusiness(nodeElement, limit) {
     }
 
 }
-
+/**
+ * @description Fetches weather data from OpenWeatherMap API and updates the DOM with current weather and forecast.
+ * @param {HTMLElement} currentNode - The DOM element to display the current weather.
+ * @param {HTMLElement} forecastNode - The DOM element to display the weather forecast.
+ * @returns {Promise<void>} Resolves when the weather data is successfully fetched and displayed.
+ * @throws {Error} Logs an error to the console if the fetch or JSON parsing fails.
+ */
 export async function getWeather(currentNode, forecastNode) {
     try {
         const currentUrl = "https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=3bc4c9f45cf04e7a74ac17d51146bf82&units=imperial";
