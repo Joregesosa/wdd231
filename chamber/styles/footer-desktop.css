@@ -1,0 +1,24 @@
+@media (min-width: 960px) {
+    footer{
+        flex-wrap: nowrap;
+        align-items: center;
+        padding-inline: 5%;
+    }
+
+    footer > address{
+        order: 1;
+        flex-shrink: 0;
+        width: fit-content;
+    }
+
+    footer > div{
+       order: 3; 
+       flex-shrink: 0;
+       width: fit-content;
+    }
+
+    footer > .social_media{
+        order: 2;
+        
+    }
+}
