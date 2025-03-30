@@ -14,19 +14,8 @@
     .weather_forecast {
         margin: 0;
         width: 30%;  
-    }
-
-    /* .current_weather > figure {
-        width: 100%;
-        overflow: hidden;
-    } */
-/* 
-    .current_weather > figure > img {
-        width: 80%;
-        max-width: 120px;
-        height: auto;
-    } */
-
+    } 
+    
     footer{
         flex-wrap: nowrap;
         align-items: center;
