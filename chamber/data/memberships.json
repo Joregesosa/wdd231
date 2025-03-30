@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "NP Membership",
+        "shortDescription": "Membership for non-profit organizations.",
+        "fee": 0,
+        "benefits": [
+            "Access to basic resources",
+            "Monthly newsletter",
+            "Networking opportunities"
+        ],
+        "description": "As a non-profit member, you gain access to essential resources and opportunities to connect with the community. This membership is designed to support organizations that contribute to the greater good"
+    },
+    {
+        "id": 2,
+        "name": "Bronze Membership",
+        "shortDescription": "Basic membership for non-profit organizations.",
+        "fee": 50,
+        "benefits": [
+            "Access to basic resources",
+            "Monthly newsletter",
+            "Networking opportunities"
+        ],
+        "description": "The Bronze Membership is designed for individuals and organizations looking to engage with the community. It provides access to essential resources and networking opportunities, making it a great starting point for those interested in our offerings."
+    },
+    {
+        "id": 3,
+        "name": "Silver Membership",
+        "shortDescription": "Enhanced membership with additional benefits.",
+        "fee": 100,
+        "benefits": [
+            "All Bronze Membership benefits",
+            "Discounts on events",
+            "Access to exclusive webinars"
+        ],
+        "description": "The Silver Membership offers enhanced benefits, including discounts on events and access to exclusive webinars. This membership is ideal for those looking to deepen their engagement and take advantage of additional resources."
+    },
+    {
+        "id": 4,
+        "name": "Gold Membership",
+        "shortDescription": "Premium membership with all benefits included.",
+        "fee": 250,
+        "benefits": [
+            "All Silver Membership benefits",
+            "Priority support",
+            "Free access to all events"
+        ],
+        "description": "The Gold Membership is our premium offering, providing all the benefits of the Silver Membership along with priority support and free access to all events. This membership is perfect for those who want to maximize their involvement and receive top-tier support."
+    }
+]
