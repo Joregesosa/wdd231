@@ -3,6 +3,7 @@ footer {
     padding: 1rem;
     color: var(--background-color);
     line-height: 1.2;
+    width: 100%;
 }
 
 footer>address>strong {

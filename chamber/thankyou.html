@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Thank you for joining the Timbuktu Chamber of Commerce. Your support helps us foster a thriving business community and promote economic development. We look forward to working with you.">
+    <meta name="keywords" content="Chamber of Commerce, thankyou">
+    <meta name="author" content="Jorge Sosa">
+    <!-- Facebook Tags -->
+    <meta property="og:title" content="Timbuktu Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://joregesosa.github.io/wdd231/chamber/images/preview.webp">
+    <meta property="og:url" content="https://joregesosa.github.io/wdd231/chamber/directory.html">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/navbar-mobile.css">
+    <link rel="stylesheet" href="styles/navbar-desktop.css">
+    <link rel="stylesheet" href="styles/footer-mobile.css">
+    <link rel="stylesheet" href="styles/footer-tablet.css">
+    <link rel="stylesheet" href="styles/footer-desktop.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
+    <!-- scripts -->
+    <script src="scripts/navbar.js" defer></script> 
+    <script src="scripts/chamber-thankyou.js" defer></script>
+    <title>Timbuktu Chamber of Commerce</title>
+</head>
+
+<body>
+    <header class="site_header">
+        <div class="header__branding">
+            <figure class="logo">
+                <img src="images/logo.svg" alt="Timbuktu Chamber of Commerce" width="60">
+            </figure>
+            <h2>Timbuktu</h2>
+            <p class="sub">Chamber of Commerce</p>
+        </div>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="list__item"><a href="/chamber/">Home</a></li>
+                <li class="list__item"><a href="directory.html">Directory</a></li>
+                <li class="list__item"><a href="join.html">Join</a></li>
+                <li class="list__item"><a href="news.html">Dicover</a></li>
+            </ul>
+        </nav>
+        <button class="header__menu_button" aria-label="Menu" id="menu_button">
+            &#9776;
+        </button>
+    </header>
+
+    <main> 
+        <h1>Thank You for Joining Us!</h1>
+
+        <p>We appreciate your interest in the Timbuktu Chamber of Commerce. Your support helps us foster a thriving business community and promote economic development. We look forward to working with you.</p>
+
+        <section class="thankyou-info">
+            <h2>Your Information</h2>
+             
+        </section> 
+
+        <article class="redirect-info"> 
+            <p class="redirect">You will be redirected to the <a href="/chamber/">Home</a> page.</p>  
+            <p class="countdown">Redirecting in <span id="countdown">15</span> seconds...</p>
+        </article>
+ 
+    </main>
+
+    <footer>
+        <address>
+            <strong>Timbuktu Chamber of Commerce</strong><br>
+            10 Rue De La Paix<br>
+            Timbuktu, Mali 999<br>
+            info@timbuktucc.org<br>
+            (223) 555-2300
+        </address>
+        <!-- social media -->
+        <ul class="social_media">
+            <li><a href="#"><img src="images/youtube.png" alt="Youtube" width="48"></a></li>
+            <li><a href="#"><img src="images/twitter.png" alt="Twitter" width="48"></a></li>
+            <li><a href="#"><img src="images/linkedin.png" alt="LinkedIn" width="48"></a></li>
+        </ul>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Jorge Sosa</p>
+            <p>&copy;<span id="current_year"></span> Timbuktu Chamber of Commerce</p>
+            <p>Last Modification: <span id="last_modification"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
