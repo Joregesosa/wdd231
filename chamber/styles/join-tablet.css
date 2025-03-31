@@ -1,0 +1,25 @@
+@media (min-width: 640px) { 
+    main{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    
+    h1{
+        grid-column: 1 / -1;
+        order: 1;
+    }
+
+    .membership-info{
+        order: 3;
+    }
+    .membership-info > p{
+        display: none;
+    }
+    .membership-info>ul{
+        gap: 3rem;
+    }
+    .application-form{
+        order: 2;
+        padding-inline: 2rem;
+    } 
+}
