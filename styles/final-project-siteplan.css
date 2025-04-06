@@ -1,0 +1,156 @@
+:root {
+    /* palette */
+    --primary-color: #000000;
+    --accent1-color: #0d47a1e6;
+    --accent2-color: #00BFFF;
+    --text-color: #f9f9f9ff;
+    --secondary-text-color: #ff6347;
+    /* Fonts */
+    --heading-font: 'Merriweather', serif;
+    --paragraph-font: 'Roboto', sans-serif;
+
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    margin-inline: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    color: var(--accent2-color);
+}
+
+header { 
+    color: var(--text-color);
+}
+
+p { 
+    color: var(--text-color);
+}
+p>a{
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav {
+    font-size: 1.2rem;
+    background-color: var(--accent1-color);
+
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--text-color);
+}
+
+.palette {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+
+
+}
+
+.palette div {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--text-color);
+}
+
+.palette_primary {
+    position: relative;
+    background-color: var(--primary-color);
+
+    &::after {
+        content: 'Background Color';
+        color: var(--text-color);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+.palette_accent1 {
+    background-color: var(--accent1-color);
+    position: relative;
+}
+
+.palette_accent1::after {
+    content: 'Section Color';
+    color: var(--text-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.palette_accent2 {
+    background-color: var(--accent2-color);
+    position: relative;
+}
+
+.palette_accent2::after {
+    content: 'Heading Color';
+    color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.palette_text {
+    background-color: var(--text-color);
+    position: relative;
+}
+
+.palette_text::after {
+    content: 'Text Color';
+    color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.palette_text_secondary {
+    background-color: var(--secondary-text-color);
+    position: relative;
+}
+
+.palette_text_secondary::after {
+    content: 'Secondary Text Color';
+    color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mobile_wireframe {
+    max-width: 420px;
+}
+
+.desktop_wireframe {
+    max-width: 960px;
+}
