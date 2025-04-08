@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover the Timbuktu Chamber of Commerce! Explore local events, business directories, and initiatives to support our community. Join us in fostering economic growth and a vibrant local business environment.">
+    <meta name="keywords" content="Chamber of Commerce, Home">
+    <meta name="author" content="Jorge Sosa">
+    <!-- Facebook Tags -->
+    <meta property="og:title" content="Timbuktu Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://joregesosa.github.io/wdd231/chamber/images/preview.webp">
+    <meta property="og:url" content="https://joregesosa.github.io/wdd231/chamber">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- navbar styles -->
+    <link rel="stylesheet" href="styles/navbar-mobile.css">
+    <link rel="stylesheet" href="styles/navbar-desktop.css">
+    <!-- footer styles -->
+    <link rel="stylesheet" href="styles/footer-mobile.css">
+    <link rel="stylesheet" href="styles/footer-tablet.css">
+    <link rel="stylesheet" href="styles/footer-desktop.css">
+    <!-- Page styles -->
+    <link rel="stylesheet" href="styles/discover-mobile.css">
+    <link rel="stylesheet" href="styles/discover-tablet.css">
+    <link rel="stylesheet" href="styles/discover-desktop.css">
+    <!-- scripts -->
+    <script src="scripts/navbar.js" defer></script>
+    <script src="scripts/chamber-discover.js" type="module"></script>
+    <title>Discover Timbuktu Chamber of Commerce </title>
+</head>
+
+<body>
+    <header class="site_header">
+        <div class="header__branding">
+            <figure class="logo">
+                <img src="images/logo.svg" alt="Timbuktu Chamber of Commerce" width="60">
+            </figure>
+            <h2>Timbuktu</h2>
+            <p class="sub">Chamber of Commerce</p>
+        </div>
+        <nav class="header__nav">
+            <ul class="nav__list" aria-label="Primary Navigation">
+                <li class="list__item"><a href="/chamber">Home</a></li>
+                <li class="list__item"><a href="directory.html">Directory</a></li>
+                <li class="list__item"><a href="join.html">Join</a></li>
+                <li class="list__item"><a href="discover.html" aria-current="page">Discover</a></li>
+            </ul>
+        </nav>
+        <button class="header__menu_button" aria-label="Menu" id="menu_button">
+            &#9776;
+        </button>
+    </header>
+    <div class="welcome_back" id="welcome_back">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button id="close_welcome_back">&times;</button>
+    </div>
+    <main>
+
+
+        <section class="local_interest">
+            <h1>Discover the Timbuktu Chamber of Commerce</h1>
+            <p>Welcome to the vibrant hub of Timbuktu's business and cultural life. Explore exciting opportunities,
+                engaging events, and impactful initiatives that drive our city's growth and prosperity.</p>
+
+            <div class="card_wrapper" id="card_wrapper">
+                
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer>
+        <address>
+            <strong>Timbuktu Chamber of Commerce</strong><br>
+            10 Rue De La Paix<br>
+            Timbuktu, Mali 999<br>
+            info@timbuktucc.org<br>
+            (223) 555-2300
+        </address>
+        <!-- social media -->
+        <ul class="social_media">
+            <li><a href="#"><img src="images/youtube.png" alt="Youtube" width="48"></a></li>
+            <li><a href="#"><img src="images/twitter.png" alt="Twitter" width="48"></a></li>
+            <li><a href="#"><img src="images/linkedin.png" alt="LinkedIn" width="48"></a></li>
+        </ul>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Jorge Sosa</p>
+            <p>&copy;<span id="current_year"></span> Timbuktu Chamber of Commerce</p>
+            <p>Last Modification: <span id="last_modification"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

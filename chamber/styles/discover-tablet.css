@@ -1,0 +1,39 @@
+@media (min-width:640px) {
+    .card {
+        grid-template-areas:
+            "image title "
+            "image description"
+            "image address"
+            "image link"
+        ;
+        padding: 0;
+    }
+    .card >figure {
+        max-width: 320px;
+        align-self: center;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .card > figure:hover {
+        transform: scale(1.08);
+        transition: all 0.5s ease-in-out; 
+        filter: brightness(0.8) contrast(1.2) saturate(1.2);
+    }
+
+    .card>h2 {
+        text-align: left; 
+        align-self: center;
+    }
+
+    .card>p,
+    .card>address {
+        padding-inline: 0; 
+    }
+
+    .card> a{
+        height: fit-content;
+    }
+
+
+}
