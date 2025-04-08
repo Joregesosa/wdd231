@@ -16,7 +16,7 @@ function placeCard({ name, address, description, image }) {
     return ` 
         <div class="card">
             <figure>
-                <img src="${image}" alt="${name}" width="300">
+                <img src="${image}" alt="${name}" width="300" loading="lazy" />
             </figure>
             <h2>${name}</h2>
             <address>
