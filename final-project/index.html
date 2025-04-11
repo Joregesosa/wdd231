@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web Portfolio of Jorge Sosa, a Full Stack Developer from the Dominican Republic.">
+    <meta name="keywords"
+        content="Jorge Sosa, Web Developer, Full Stack Developer, Portfolio, Software Development, Web Development, Dominican Republic, Bolivia">
+    <meta name="author" content="Jorge Sosa">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="styles/common-small.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/common-large.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
+    <script src="scripts/common.js" defer></script>
+    <title> Web Portfolio - Jorge Sosa</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                Web Portfolio
+            </h1>
+            <nav class="main_menu" id="main-menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="index.html" aria-label="Home" aria-current="page">
+                            <svg>
+                                <use xlink:href="images/icons/home.svg#home"></use>
+                            </svg>
+                            <span class="item__text">Home</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="projects.html" aria-label="Projects">
+                            <svg>
+                                <use xlink:href="images/icons/projects.svg#projects"></use>
+                            </svg>
+                            <span class="item__text">Projects</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="hire-me.html" aria-label="Hire Me">
+                            <svg>
+                                <use xlink:href="images/icons/contact.svg#contact"></use>
+                            </svg>
+                            <span class="item__text">Hire me</span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="menu_button_close" id="close-menu">
+                    &times;
+                </button>
+            </nav>
+            <button class="menu_button_open" id="open-menu">
+                &#9776;
+            </button>
+        </header>
+        
+        <main>
+            <section class="hero">
+                <div class="profile">
+                    <figure>
+                        <img src="images/profile.webp" alt="profile image" loading="lazy" width="200" height="200">
+                    </figure>
+                    <h2>Jorge L. Sosa</h2>
+                    <p>Web Full Stack Developer</p>
+                </div>
+                <div class="summary">
+                    <p> 
+                        I am a Full Stack Developer skilled in PHP, Laravel, ReactJS, and JavaScript. With a background in IT support, I have worked on projects optimizing performance and resolving technical issues. Currently, I study Software Development at BYU and completed a Full Stack Bootcamp at FUNVAL International.
+                    </p>
+
+                    <a href="files/cv-Jorge-Sosa.pdf" download class="action_link">
+                        Download Resume
+                    </a>
+
+                </div>
+            </section>
+            <section class="technologies">
+                <h2>Technologies</h2>
+                <ul id="technologies-list">
+
+                </ul>
+            </section>
+            <section class="education">
+                <h2>Education</h2>
+                <div class="education_phrase">
+                    <p>
+                        " I consider myself a lifelong learner. I am always looking for opportunities to learn new
+                        things and improve my skills. I am currently studying Software Development at Brigham Young
+                        University. I have also completed a Full Stack Web Development Bootcamp at FUNVAL
+                        International."
+                    </p>
+
+                    <a href="projects.html" class="action_link">
+                        See my projects
+                    </a>
+                </div>
+                <div class="education_cards">
+                    <div class="education_card">
+                        <h3>Brigham Young University</h3>
+                        <p>Bachelor's of Software Development</p>
+                        <p>Apr 2024 - Dec 2026</p>
+                    </div>
+                    <div class="education_card">
+                        <h3>Brigham Young University</h3>
+                        <p>Pathway Certificate</p>
+                        <p>Sept 2023 - Apr 2024</p>
+                    </div>
+                    <div class="education_card">
+                        <h3>FUNVAL International</h3>
+                        <p>Web Full Stack Development - Bootcamp</p>
+                        <p>May 2023 - Aug 2023</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="experience">
+                <h2>Experience</h2>
+                <div class="experience_phrase">
+                    <p>
+                        "I have experience working as a Full Stack Developer, Frontend Developer Instructor, and IT
+                        Support. I have worked on projects using technologies such as PHP, Laravel, ReactJS, and
+                        JavaScript. I have also worked on projects that required me to optimize system performance,
+                        resolve technical issues, provide support to branch offices, streamline procurement processes,
+                        and
+                        support financial systems."
+                    </p>
+
+                </div>
+                <div class="timeline">
+                    <div class="experience_timeline">
+                        <h3 class="heading">Funval International</h3>
+                        <p class="description"><b>Frontend Developer Instructor:</b>
+                            Managed classes with an average of 15 students, fostering a motivating and dynamic learning
+                            environment while adapting to
+                            the unique needs of each group.
+                        </p>
+                        <p class="date">Oct 2023 - Present</p>
+                    </div>
+                    <div class="experience_timeline">
+                        <h3 class="heading">Tesoria R.D.</h3>
+                        <p class="description"> <b>Full Stack Developer - Freelance:</b> Developed a full-stack web
+                            application using PHP, Laravel, and ReactJS, implemented user management, improved service
+                            request handling, and delivered a scalable web application on time.</p>
+                        <p class="date">aug 2023 - oct 2023</p>
+                    </div>
+                    <div class="experience_timeline">
+                        <h3 class="heading">Soluciones Ankerite</h3>
+                        <p class="description"><b>IT Support: </b>optimized system performance, resolved technical
+                            issues, provided support to branch offices, streamlined procurement processes, and supported
+                            financial systems.</p>
+                        <p class="date">mar 2017 - mar 2023</p>
+                    </div>
+
+                </div>
+
+                <a href="hire-me.html" class="action_link">
+                    Hire Me
+                </a>
+            </section>
+
+
+
+        </main>
+
+        <footer>
+            <nav>
+                <ul class="social_media_list">
+                    <li class="list__item">
+                        <a href="https://github.com/joregesosa" aria-label="Github" target="_blank">
+                            <svg>
+                                <use xlink:href="images/icons/github.svg#github"></use>
+                            </svg>
+                            <span class="hidden">Github</span>
+                        </a>
+                    </li>
+                    <li class="list__item">
+                        <a href="https://wa.me/59175570209" target="_blank" aria-label="WhatsApp">
+                            <svg>
+                                <use xlink:href="images/icons/whatsapp.svg#whatsapp"></use>
+                            </svg>
+                            <span class="hidden">WhatsApp</span>
+                        </a>
+                    </li>
+                    <li class="list__item">
+                        <a href="https://www.linkedin.com/in/jorgelsosa/" aria-label="LinkedIn" target="_blank">
+                            <svg>
+                                <use xlink:href="images/icons/linkedin.svg#linkedin"></use>
+                            </svg>
+                            <span class="hidden">LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <p>&copy; 2024 - Jorge L. Sosa - all right reserved </p>
+        </footer>
+    </div>
+    <script src="scripts/main.js" type="module"></script>
+</body>
+
+</html>
