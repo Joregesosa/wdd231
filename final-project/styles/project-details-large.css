@@ -1,0 +1,49 @@
+@media screen and (min-width: 768px) {
+
+    main{
+        grid-template-areas:
+            "h2 h2 h2"
+            "desc  desc desc"
+            "img-d  img-d img-d"
+            "action action action"
+            "tech tech tech"
+        ;
+        gap: 2rem;
+    }
+
+    main:has(.details__mobile_image) {
+        grid-template-areas:
+            "h2 h2 h2"
+            "img-m img-d img-d"
+            "img-m desc desc"
+            "action action action"
+            "tech tech tech"
+        ;
+        gap: 2rem;
+    }
+
+    main>h2 {
+        grid-area: h2;
+    }
+
+    main>p {
+        grid-area: desc;
+    }
+
+    .details__mobile_image {
+        grid-area: img-m;
+    }
+
+    .details__desktop_image {
+        grid-area: img-d;
+    }
+
+    .details__actions {
+        grid-area: action;
+        justify-content: end;
+    }
+
+    .details__technologies {
+        grid-area: tech;
+    }
+}
