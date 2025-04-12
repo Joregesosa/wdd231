@@ -301,7 +301,8 @@ header {
     grid-area: date;
     font-size: .8rem;
     font-style: italic;
-    background-color: var(--accent1-color);
+    background-image: var(--card-gradient);
+    background-size: 120% 120%;
     align-self: center;
     display: flex;
     justify-content: center;

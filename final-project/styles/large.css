@@ -13,6 +13,7 @@
         margin: 0;
         border: solid var(--accent1-color) 2px;
         border-radius: .5rem;
+        overflow: hidden;
     }
 
     .profile {
@@ -46,8 +47,7 @@
         background-image: var(--card-gradient);
         background-size: 200% 200%;
         height: 100%;
-        position: relative;
-        overflow: hidden;
+        position: relative; 
     }
 
     .summary::before {
