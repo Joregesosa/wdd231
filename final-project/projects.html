@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 - Web Portfolio Jorge L. Sosa">
+    <meta name="author" content="Jorge L. Sosa">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="styles/common-small.css">
+    <link rel="stylesheet" href="styles/common-large.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="dns-prefetch" href="https://api.github.com">
+
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/projects.js" type="module"></script>
+
+    <title>WDD 231 - Web Portfolio Jorge L. Sosa</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                Web Portfolio
+            </h1>
+            <nav class="main_menu" id="main-menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="index.html" aria-label="Home">
+                            <svg>
+                                <use xlink:href="images/icons/home.svg#home"></use>
+                            </svg>
+                            <span class="item__text">Home</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="projects.html" aria-label="Projects" aria-current="page">
+                            <svg>
+                                <use xlink:href="images/icons/projects.svg#projects"></use>
+                            </svg>
+                            <span class="item__text">Projects</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="hire-me.html" aria-label="Hire Me">
+                            <svg>
+                                <use xlink:href="images/icons/contact.svg#contact"></use>
+                            </svg>
+                            <span class="item__text">Hire me</span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="menu_button_close" id="close-menu">
+                    &times;
+                </button>
+            </nav>
+            <button class="menu_button_open" id="open-menu">
+                &#9776;
+            </button>
+        </header>
+
+        <main>
+            <section>
+
+                <h2 class="page_title">Projects</h2>
+
+                <p class="intro">
+                    This is a collection of my projects. I have included a brief description of each project, along with
+                    the technologies used and links to the live demo and source code.
+                </p>
+
+                <div class="project_list">
+
+                    <div class="project_item">
+                        <h3 class="project_title">Auth</h3>
+                        <p class="project_description">A simple authentication system built with PHP and MySQL.</p>
+                        <div class="project_links">
+                            <a href="https://github.com/Joregesosa/auth" target="_blank" class="project_link">View
+                                Source</a>
+                            <a href="https://joregesosa.github.io/auth" target="_blank" class="project_link">Live
+                                Demo</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            <dialog id="project-dialog" class="dialog">
+                
+            </dialog>
+        </main>
+
+        <footer>
+            <nav>
+                <ul class="social_media_list">
+                    <li class="list__item">
+                        <a href="https://github.com/joregesosa" aria-label="Github" target="_blank">
+                            <svg>
+                                <use xlink:href="images/icons/github.svg#github"></use>
+                            </svg>
+                            <span class="hidden">Github</span>
+                        </a>
+                    </li>
+                    <li class="list__item">
+                        <a href="https://wa.me/59175570209" target="_blank" aria-label="WhatsApp">
+                            <svg>
+                                <use xlink:href="images/icons/whatsapp.svg#whatsapp"></use>
+                            </svg>
+                            <span class="hidden">WhatsApp</span>
+                        </a>
+                    </li>
+                    <li class="list__item">
+                        <a href="https://www.linkedin.com/in/jorgelsosa/" aria-label="LinkedIn" target="_blank">
+                            <svg>
+                                <use xlink:href="images/icons/linkedin.svg#linkedin"></use>
+                            </svg>
+                            <span class="hidden">LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <p>&copy; 2024 - Jorge L. Sosa - all right reserved </p>
+        </footer>
+    </div>
+</body>
+
+</html>

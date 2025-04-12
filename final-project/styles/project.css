@@ -1,0 +1,158 @@
+:root {
+    --card-gradient: linear-gradient(135deg, var(--primary-color), var(--accent1-color), var(--primary-color));
+}
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+main h2 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px var(--accent1-color);
+    filter: drop-shadow(2px 2px 0px var(--primary-color));
+    text-align: center;
+}
+
+main .intro {
+    margin: 1rem 0;
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    max-width: 640px;
+    margin-inline: auto;
+}
+
+.project_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    gap: 1.5rem;
+    padding-top: 1rem;
+    justify-content: center;
+}
+
+
+.project_item {
+    border: solid 1px var(--accent1-color);
+    background: var(--card-gradient);
+    background-size: 240% 240%;
+    padding: 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.project_item:hover {
+    transform: scale(1.05);
+    background-position: right bottom;
+}
+
+
+.project_item>h2 {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    color: var(--secondary-text-color);
+    text-shadow: 2px 2px 2px var(--accent1-color);
+    filter: drop-shadow(2px 2px 0px var(--primary-color));
+}
+
+.project_item>p {
+    margin-block: .5rem;
+    flex-grow: 1;
+}
+
+.project_item>.project_links {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.project_item>.project_links>a {
+    color: var(--secondary-text-color);
+    background-color: var(--primary-color);
+    padding: .5rem 1rem;
+}
+
+.project_item>.project_links>a:hover {
+    background-color: var(--accent1-color);
+    color: var(--primary-text-color);
+}
+
+.dialog {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: .5rem;
+    background: var(--card-gradient);
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+.dialog>form {
+    color: white;
+    display: grid;
+    gap: 1rem;
+}
+
+.dialog h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--secondary-text-color);
+    text-shadow: 2px 2px 2px var(--accent1-color);
+    filter: drop-shadow(2px 2px 0px var(--primary-color));
+}
+
+.dialog hr {
+    background-color: var(--secondary-text-color);
+}
+
+.dialog   p{
+    font-size: 1.4rem; 
+    margin-bottom: 1rem;
+}
+
+.dialog button {
+    background-color: var(--primary-color);
+    color: var(--secondary-text-color); 
+    filter: drop-shadow(2px 2px 0px var(--secondary-text-color));
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+.dialog button:hover {
+    background-color: var(--accent1-color);
+    color: var(--primary-text-color);
+
+}
+
+.dialog::backdrop {
+    background-color: rgba(235, 235, 235, 0.5);
+}
+
+.dialog_user {
+    overflow: hidden;
+    margin-inline: auto;
+    text-align: center;
+    font-weight: bold;
+    color: var(--secondary-text-color);
+    font-size: 1.5rem;
+}
+
+.dialog_user img {
+    width: 140px;
+    height: auto;
+    border-radius: 50%;
+    border: solid 1px var(--accent1-color);
+}
