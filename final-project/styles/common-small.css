@@ -5,6 +5,8 @@
     --accent2-color: #00BFFF;
     --text-color: #f9f9f9ff;
     --secondary-text-color: #ff6347;
+    --card-gradient: linear-gradient(135deg, #000000, #0d47a1e6, #000000);
+
     /* Fonts */
     --heading-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     --paragraph-font: 'Roboto', sans-serif;
