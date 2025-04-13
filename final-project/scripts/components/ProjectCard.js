@@ -13,7 +13,10 @@ export function ProjectCard(project) {
         </div>
     `;
 
-    projectItem.addEventListener('click', () => {
+    projectItem.addEventListener('click', (e) => {
+        if(e.target.tagName === 'A') {
+            return;
+        }
         const dialog = document.querySelector('#project-dialog');
         dialog.innerHTML = dialogContent(project);
         dialog.showModal();

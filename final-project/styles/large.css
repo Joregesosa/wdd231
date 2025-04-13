@@ -74,6 +74,7 @@
         margin-top: 2rem;
         box-shadow: var(--primary-color) 3px 3px 2px;
         transition: background-position 1s;
+        padding: .8rem 3rem;
     }
 
     .action_link:hover {
@@ -215,6 +216,7 @@
     .education .action_link {
         box-shadow: 3px 3px 2px var(--primary-color);
         filter: drop-shadow(1px 1px 0px var(--accent1-color));
+        font-size: 1.2rem;
     }
 
     .experience>h2::before {

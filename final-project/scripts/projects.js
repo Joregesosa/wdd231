@@ -1,6 +1,6 @@
 import { ProjectCard } from "./components/ProjectCard.js"
-const projectList = document.querySelector('.project_list');
-const dialog = document.querySelector('#project-dialog');
+const projectList = document.querySelector('.project_list'); 
+
 async function fetchData() {
     const response = await fetch('https://api.github.com/users/joregesosa/repos');
     const data = await response.json();

@@ -255,6 +255,7 @@ header {
     margin-inline: auto;
     margin-top: 2.87rem;
     position: relative;
+    padding: .8rem 4rem ;
 }
 
 .experience>.action_link::after {
