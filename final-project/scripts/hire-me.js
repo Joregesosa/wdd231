@@ -9,10 +9,8 @@ hireMeForm.addEventListener('change', (event) => {
 
 hireMeForm.addEventListener('submit', (event) => {  
     const formData = new FormData(hireMeForm);
-    const data = Object.fromEntries(formData.entries());
-    console.log('Form submitted:', data); 
-    localStorage.removeItem('hireMeData');
-    
+    const data = Object.fromEntries(formData.entries()); 
+    localStorage.removeItem('hireMeData');  
 });
 
 resumeDialog.addEventListener('click', (event) => {
