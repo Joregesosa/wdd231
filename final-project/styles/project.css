@@ -86,17 +86,19 @@
      left: 50%;
      transform: translate(-50%, -50%);
      border: none;
-     border-radius: .5rem;
-     background: var(--card-gradient);
-     padding: 2rem;
      width: 100%;
      max-width: 600px;
+     background-color: transparent;
+     padding: .5rem;
  }
 
  .dialog>form {
      color: white;
      display: grid;
      gap: 1rem;
+     padding: 2rem;
+     background: var(--card-gradient);
+     border-radius: .5rem;
  }
 
  .dialog h3 {
