@@ -4,19 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 - Web Portfolio -Dynamic Web Fundamentals - Jorge L. Sosa">
+    <meta name="description" content="Get in touch with Jorge L. Sosa for web development projects.">
+    <meta name="keywords" content="Jorge Sosa, web development, hire me, contact">
     <meta name="author" content="Jorge L. Sosa">
-
+    <!-- Social Media -->
+    <meta property="og:title" content="Jorge Sosa - Web Portfolio Hire Me">
+    <meta property="og:site_name" content="Jorge Sosa - Web Portfolio Hire Me">
+    <meta property="og:description" content="Get in touch with Jorge L. Sosa for web development projects.">
+    <meta property="og:image" content="images/favicon-32x32.png">
+    <meta property="og:url" content="https://joregesosa.github.io/wdd231/final-project/hire-me.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Jorge Sosa - Web Portfolio">
+    <!-- favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <!-- styles -->
     <link rel="stylesheet" href="styles/common-small.css">
     <link rel="stylesheet" href="styles/common-large.css">
     <link rel="stylesheet" href="styles/hire-me.css">
-
-
+    <!-- scripts -->
     <script src="scripts/common.js" defer></script>
-
-    <title>WDD 131 - Web Portfolio -Dynamic Web Fundamentals - Jorge L. Sosa</title>
+    <script src="scripts/hire-me.js" defer></script>
+    <title>Jorge Sosa - Hire Me</title>
 </head>
 
 <body>
@@ -28,7 +37,7 @@
             <nav class="main_menu" id="main-menu">
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a href="index.html" aria-label="Home" aria-current="page">
+                        <a href="index.html" aria-label="Home">
                             <svg>
                                 <use xlink:href="images/icons/home.svg#home"></use>
                             </svg>
@@ -44,7 +53,7 @@
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a href="hire-me.html" aria-label="Hire Me">
+                        <a href="hire-me.html" aria-label="Hire Me" aria-current="page">
                             <svg>
                                 <use xlink:href="images/icons/contact.svg#contact"></use>
                             </svg>
@@ -65,7 +74,7 @@
 
             <section class="hire-me">
 
-                <form class="hire-me__form" action="thankyou.html">
+                <form class="hire-me__form" action="thankyou.html" id="hire-me-form">
                     <h2>Hire Me</h2>
                     <label for="name">
                         Name:
@@ -77,9 +86,10 @@
                     </label>
                     <label for="phone">
                         Phone:
-                        <input type="tel" name="phone" id="phone" placeholder="e.g., +1-555-555-5555" pattern="^\+?[0-9]{1,4}-[0-9]{3}-[0-9]{3}-[0-9]{4}$" required>
+                        <input type="tel" name="phone" id="phone" placeholder="e.g., +1-555-555-5555"
+                            pattern="^\+?[0-9]{1,4}-[0-9]{3}-[0-9]{3}-[0-9]{4}$" required>
                     </label>
-                    
+
                     <label for="message">
                         Message:
                         <textarea name="message" id="message" cols="30" rows="10" required></textarea>
@@ -88,6 +98,16 @@
                 </form>
             </section>
 
+            <dialog id="resume-dialog" class="dialog">
+
+                <div class="dialog__content">
+                    <h2>Resume Form</h2>
+                    <p>Do you want to resume the form you started filling out?</p>
+                    <button value="resume-form">Yes</button>
+                    <button value="no-resume-form">No</button>
+                </div>
+
+            </dialog>
 
         </main>
 
